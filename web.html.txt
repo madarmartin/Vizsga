@@ -1,0 +1,37 @@
+sudo nano /etc/apache2/sites-enabled/000-default.conf
+DirectoryIndex web.html
+
+így kell kinéznie: 
+<VirtualHost *:80>
+    DocumentRoot /var/www/html
+    DirectoryIndex web.html
+</VirtualHost>
+
+sudo systemctl restart apache2
+
+http://szerver_ip
+
+---------------MŰKÖDIK--------------
+1. lépés
+/etc/apache2/mods-enabled/dir.conf
+DirectoryIndex web.html index.html index.php
+
+2.lépés
+nano /etc/apache2/sites-enabled/000-default.conf
+<VirtualHost *:80>
+    ServerAdmin webmaster@localhost
+
+    DocumentRoot /web/html
+
+    <Directory /web/html>
+        DirectoryIndex web.html
+        Options Indexes FollowSymLinks
+        AllowOverride None
+        Require all granted
+    </Directory>
+
+    ErrorLog ${APACHE_LOG_DIR}/error.log
+    CustomLog ${APACHE_LOG_DIR}/access.log combined
+</VirtualHost>
+----------------
+
