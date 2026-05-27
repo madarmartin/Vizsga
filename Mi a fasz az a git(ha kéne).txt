@@ -1,0 +1,12 @@
+Mi a fasz az a git?
+nem tudom, de így működik?:
+	letöltöd, "beírod hogy "git" a googleba", kidobja, rákattintasz és letöltöd, next next finish (kurva hosszú)
+	megvan? Bomba
+	akkor belépsz a mappába, és nyitsz a mappában egy terminált, belebaszod hogy "git init", bomba
+	aztán hogy "git config --global user.email <email-címed kisöcskös>"
+	aztán hogy "git config --global user.name <neved kisöcskös>", megvan? bomba
+	aztán nyomsz még módosítás elött hogy "git add .", hogy mit csinál?, jó kérdés, passz
+	aztán nyomsz egy olyat hogy "git commit -m <módosításod neve>"
+	aztán ezt a minden módosítás elött eljátszod, hogy "git add .""git commit -m <ez-az-amaz>"
+	megnézni a "git log"-al tudod
+	csá
